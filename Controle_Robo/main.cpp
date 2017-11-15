@@ -11,8 +11,8 @@
 #include <lwip/arch.h>
 #include <lwip/api.h>
 
-#define AP_SSID "andre"
-#define AP_PSK "andrefelipe"
+#define AP_SSID "NOMEDOWIFI"
+#define AP_PSK "SENHADOWIFI" //pelo menos 8 caracteres
 struct sdk_softap_config ap_config;
 
 const int D1 = 5, D2 = 4, D3 = 0, D4 = 2;
