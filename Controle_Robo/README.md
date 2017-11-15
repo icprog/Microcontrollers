@@ -4,4 +4,10 @@ O Esp funciona como um servidor, criando uma rede wifi, recebendo dados do clien
 
 O código foi desenvolvido baseado na biblioteca nativa para c++ do esp8266.
 
+Mapeamento das portas:
+D1 = + (Motor 1 pra frente)
+D2 = - (Motor 1 pra trás)
+D3 = - (Motor 2 pra trás)
+D4 = + (Motor 2 pra frente)
+
 Will Douglas. 
