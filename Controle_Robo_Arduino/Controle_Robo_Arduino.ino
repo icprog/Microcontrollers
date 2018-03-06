@@ -1,17 +1,14 @@
-#include <SoftwareSerial.h>
-
-char c, d;
 //definindo pinos
 const int ponteH01DIR = 10, ponteH01ESQ = 9,
           ponteH02DIR = 5,  ponteH02ESQ = 6,
           ponteH03DIR = 4,  ponteH03ESQ = 3,
           pwm = 100;
 
+//variáveis necessárias
 bool a = 0, b = 0;
+char c, d;
 
-SoftwareSerial mySerial(7, 8);
-
-void zero()
+void zero() 
 {
   digitalWrite(ponteH01DIR, LOW);
   digitalWrite(ponteH02DIR, LOW);
@@ -78,8 +75,6 @@ void weaponSquareoff()
 
 void setup()
 {
-  Serial.begin(9600);
-  mySerial.begin(9600);
   pinMode(ponteH01DIR, OUTPUT);
   pinMode(ponteH01ESQ, OUTPUT);
   pinMode(ponteH02DIR, OUTPUT);
@@ -88,7 +83,6 @@ void setup()
   pinMode(ponteH03ESQ, OUTPUT);
   d = 'S';
   c = 'S';
-  
 }
 
 
@@ -101,13 +95,8 @@ void loop()
     if (c != d)
     {
       zero();
-      Serial.println("................TROCOU!...................");
       delay(30);
     }
-//    Serial.print(a);
-//    Serial.print(" , ");
-    Serial.println(c);
-    
       switch(c)
       {
         case 'F':
@@ -143,4 +132,3 @@ void loop()
       }
   }
 }
-
