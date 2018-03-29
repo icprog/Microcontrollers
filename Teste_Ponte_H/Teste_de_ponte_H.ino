@@ -36,7 +36,7 @@ void loop() {
         digitalWrite(pin2, HIGH);
         break;
       case 'd':
-        Serial.println("Sentido pin1");
+        Serial.println("Sentido 2");
         digitalWrite(pin2, LOW);
         delay(50);
         digitalWrite(pin1, HIGH);
