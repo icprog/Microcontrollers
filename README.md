@@ -1,3 +1,4 @@
-Atividades, projetos, trabalhos e provas da disciplina "Microcontroladores e Microprocessadores", Lecionada pelo professor Doutor André Felipe Dantas (github.com/lordcobisco) no sexto período de Engenharia Elétrica da UnP.
+# Microcontrollers and Microprocessors
 
-Will Douglas. 
+Codes, exercises and projects involving this class, taught by Professor [André Felipe Dantas](github.com/lordcobisco).
+From the sixth semester of Electrical Engineering in the Universidade Potiguar.
