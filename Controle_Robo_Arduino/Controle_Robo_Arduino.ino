@@ -1,8 +1,11 @@
+ #include <SoftwareSerial.h>
+
 //definindo pinos
 const int ponteH01DIR = 10, ponteH01ESQ = 9,
           ponteH02DIR = 5,  ponteH02ESQ = 6,
           ponteH03DIR = 4,  ponteH03ESQ = 3,
-          pwm = 100;
+          pwm = 100,
+          rx = 7, tx = 8;
 
 //variáveis necessárias
 bool a = 0, b = 0;
@@ -78,6 +81,8 @@ void weaponSquareoff(){
     delay(30);
 }
 
+SoftwareSerial mySerial =  SoftwareSerial(rx, tx);
+
 void setup(){
     pinMode(ponteH01DIR, OUTPUT);
     pinMode(ponteH01ESQ, OUTPUT);
@@ -85,6 +90,10 @@ void setup(){
     pinMode(ponteH02ESQ, OUTPUT);
     pinMode(ponteH03DIR, OUTPUT);
     pinMode(ponteH03ESQ, OUTPUT);
+    pinMode(rx, INPUT);
+    pinMode(tx, OUTPUT);
+          
+    mySerial.begin(9600);
     
     d = 'S';
     c = 'S';
